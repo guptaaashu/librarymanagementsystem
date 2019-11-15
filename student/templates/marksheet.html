@@ -1,0 +1,14 @@
+<div id="people-list">	
+<h1>Welcome</h1>
+<div>
+<h2>{{ marksheet.year }}</h2>
+</div>
+<div>
+{% for m in marks %}
+<div>
+<p><b>Subject Name - </b>{{ m.subject_name }}</p>
+<p><b>Subject Total - </b>{{ m.total_mark }}</p>
+<p><b>Marks Obtained - </b>{{ m.obtained_mark }}</p>
+</div>
+{% endfor %}
+</div>

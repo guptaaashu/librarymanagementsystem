@@ -1,0 +1,10 @@
+<h1>Kalka Public School</h1>
+<h1><a  href="{% url 'issued' %}">Issued books</h1>
+{% for b in books %}
+<div>
+<p><a href="{% url 'detail' pk=b.pk %}">Name- {{ b.name }}</a></p>
+<p>Author Name- {{ b.author }}</p>
+<p></p>
+<p></p>
+</div>
+{% endfor %}
